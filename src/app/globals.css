@@ -1,0 +1,62 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 22% 10%;
+    --foreground: 0 0% 98%;
+    --card: 240 22% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 22% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 240 82% 73%;
+    --primary-foreground: 240 22% 10%;
+    --secondary: 240 22% 18%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 22% 18%;
+    --muted-foreground: 240 10% 65%;
+    --accent: 213 80% 45%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 22% 20%;
+    --input: 240 22% 20%;
+    --ring: 240 82% 73%;
+    --chart-1: 240 82% 73%;
+    --chart-2: 213 80% 45%;
+    --chart-3: 200 80% 50%;
+    --chart-4: 280 80% 60%;
+    --chart-5: 340 80% 55%;
+    --radius: 0.75rem;
+    --sidebar-background: 240 22% 12%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 240 82% 73%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 240 22% 18%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 22% 20%;
+    --sidebar-ring: 240 82% 73%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline tracking-tight;
+  }
+}
+
+.glass-panel {
+  @apply bg-card/60 backdrop-blur-xl border border-white/10;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+}

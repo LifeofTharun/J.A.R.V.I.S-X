@@ -1,0 +1,17 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Futuristic UI background with data particles",
+      "imageUrl": "https://picsum.photos/seed/jarvis1/1920/1080",
+      "imageHint": "futuristic technology"
+    },
+    {
+      "id": "agent-vision",
+      "description": "Computer vision analysis overlay",
+      "imageUrl": "https://picsum.photos/seed/jarvis2/800/600",
+      "imageHint": "computer vision"
+    }
+  ]
+}
